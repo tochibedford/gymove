@@ -6,6 +6,9 @@ const Test = () => {
         /* Start Code Here */
         <>
             <Button buttonType='startWorkoutButton'>Hellooo</Button>  
+            <Button buttonType='finishWorkoutButton'>Hellooo</Button>  
+            <Button buttonType='filterButton'>Hellooo</Button>  
+            <Button buttonType='addPlanButton'>Hellooo</Button>  
         </>
         /* End Code Here */
      );
