@@ -5,10 +5,11 @@ const Test = () => {
     return ( 
         /* Start Code Here */
         <>
-            <Button buttonType='startWorkoutButton'>Hellooo</Button>  
-            <Button buttonType='finishWorkoutButton'>Hellooo</Button>  
-            <Button buttonType='filterButton'>Hellooo</Button>  
-            <Button buttonType='addPlanButton'>Hellooo</Button>  
+            <Button buttonType='startWorkoutButton'>Start Workout Plan</Button>  
+            <Button buttonType='finishWorkoutButton'>Set Finish</Button>  
+            <Button buttonType='createWorkoutButton'>Create Workout Plan Now</Button>  
+            <Button buttonType='filterButton'>Filter</Button>  
+            <Button buttonType='addPlanButton'></Button>  
         </>
         /* End Code Here */
      );
