@@ -1,0 +1,20 @@
+@import "theme.scss";
+
+.optionsModal {
+border-radius: 30px;
+box-shadow: -1px 2px 5px 2px rgba(151, 151, 151, 0.1);
+width: max-content;
+padding: 20px 0;
+}
+
+.optionsModalItems{
+    font-weight: 500;
+    font-size: 20px;
+    padding: 8px 30px;
+    line-height: 24px;
+    color: $modal-selector-color;
+
+    &:hover {
+        background-color: $modal-selector-background;
+    }
+}
