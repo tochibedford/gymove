@@ -1,9 +1,12 @@
 import SearchBar from "@components/searchbar/SearchBar";
 import Button from "../../components/buttons/button";
+import Options from '@components/modals/Options'
 
 // use this file to test components
 const Test = () => {
-    return ( 
+
+    const a = [{ name: "Edit" }, { name: "Delete" }, { name: "Force Finish" }];
+    return (
         /* Start Code Here */
         <>
             <h1>
@@ -14,11 +17,11 @@ const Test = () => {
             <h2>
                 Buttons
             </h2>
-            <Button buttonType='startWorkoutButton'>Start Workout Plan</Button>  
-            <Button buttonType='finishWorkoutButton'>Set Finish</Button>  
-            <Button buttonType='createWorkoutButton'>Create Workout Plan Now</Button>  
-            <Button buttonType='filterButton'>Filter</Button>  
-            <Button buttonType='addPlanButton'></Button> 
+            <Button buttonType='startWorkoutButton'>Start Workout Plan</Button>
+            <Button buttonType='finishWorkoutButton'>Set Finish</Button>
+            <Button buttonType='createWorkoutButton'>Create Workout Plan Now</Button>
+            <Button buttonType='filterButton'>Filter</Button>
+            <Button buttonType='addPlanButton'></Button>
             <br />
             <br />
             <br />
@@ -30,9 +33,12 @@ const Test = () => {
             </h2>
             <SearchBar />
 
+
+            <Options options={a}></Options>
+
         </>
         /* End Code Here */
-     );
+    );
 }
- 
+
 export default Test;
