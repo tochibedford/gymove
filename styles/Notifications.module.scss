@@ -1,0 +1,33 @@
+@import 'theme.scss';
+
+.notificationsContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8em 1em;
+    max-width: 20em;
+    width: 100%;
+    height: max-content;
+
+    .notIcon {
+        background-color: $primary-light-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 5em;
+        height: 5em;
+        padding: 1.5em;
+        border-radius: 2em;
+        position: relative;
+        cursor: pointer;
+    
+        .iconLight {
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 1.7em;
+            width: 1.7em;
+            border-radius: 50%;
+            background-color: $secondary-color;
+        }
+    }
+}

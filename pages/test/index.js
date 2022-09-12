@@ -4,6 +4,7 @@ import Options from '@components/modals/Options'
 import Avatar from '@components/avatar/Avatar'
 import DateSummary from "@components/datesummary/DateSummary";
 import MiniDateSummary from "@components/datesummary/MiniDateSummary";
+import Notifications from "@components/notifications/Notifications";
 
 // use this file to test components
 const Test = () => {
@@ -58,6 +59,14 @@ const Test = () => {
             </h2>
             <MiniDateSummary day={4}></MiniDateSummary>
 
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+
+            <h2>Notifications</h2>
+            <Notifications notifications={["1"]} messages={["hey"]} gifts={["lollipop"]}/>
         </>
         /* End Code Here */
     );
