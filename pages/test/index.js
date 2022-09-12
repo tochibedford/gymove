@@ -2,6 +2,8 @@ import SearchBar from "@components/searchbar/SearchBar";
 import Button from "../../components/buttons/button";
 import Options from '@components/modals/Options'
 import Avatar from '@components/avatar/Avatar'
+import DateSummary from "@components/datesummary/DateSummary";
+import MiniDateSummary from "@components/datesummary/MiniDateSummary";
 
 // use this file to test components
 const Test = () => {
@@ -47,6 +49,14 @@ const Test = () => {
                 Avatar
             </h2>
             <Avatar name={user.name} status={user.status} image={user.image}></Avatar>
+            <h2>
+                DateSummary
+            </h2>
+            <DateSummary day={4} weekday="Mon"></DateSummary>
+            <h2>
+                MiniDateSummary
+            </h2>
+            <MiniDateSummary day={4}></MiniDateSummary>
 
         </>
         /* End Code Here */
