@@ -1,9 +1,17 @@
 import SearchBar from "@components/searchbar/SearchBar";
 import Button from "../../components/buttons/button";
 import Options from '@components/modals/Options'
+import Avatar from '@components/avatar/Avatar'
+import DateSummary from "@components/datesummary/DateSummary";
+import MiniDateSummary from "@components/datesummary/MiniDateSummary";
 
 // use this file to test components
 const Test = () => {
+    const user = {
+        name: "Peter Parkur",
+        status: "Super Admin",
+        image: "/assets/avatar.png"
+    }
 
     const a = [{ name: "Edit" }, { name: "Delete" }, { name: "Force Finish" }];
     return (
@@ -33,8 +41,22 @@ const Test = () => {
             </h2>
             <SearchBar />
 
-
+            <h2>
+                Options
+            </h2>
             <Options options={a}></Options>
+            <h2>
+                Avatar
+            </h2>
+            <Avatar name={user.name} status={user.status} image={user.image}></Avatar>
+            <h2>
+                DateSummary
+            </h2>
+            <DateSummary day={4} weekday="Mon"></DateSummary>
+            <h2>
+                MiniDateSummary
+            </h2>
+            <MiniDateSummary day={4}></MiniDateSummary>
 
         </>
         /* End Code Here */

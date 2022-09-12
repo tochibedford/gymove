@@ -1,0 +1,26 @@
+@import "theme.scss";
+
+.avatarContainer {
+    display: flex;
+    align-items: center;
+}
+.avatarImage {
+    border-radius: 50%;
+}
+.avatarInfo{
+    margin: 0 16px;
+
+    h1 {
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 24px;
+            margin: 0 0 10px 0;
+        }
+        
+    p {
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 17px;
+            color: $avatar-info;
+        }
+}
