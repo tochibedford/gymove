@@ -5,6 +5,7 @@ border-radius: 30px;
 box-shadow: -1px 2px 5px 2px rgba(151, 151, 151, 0.1);
 width: max-content;
 padding: 20px 0;
+background: $white;
 }
 
 .optionsModalItems{
@@ -17,4 +18,10 @@ padding: 20px 0;
     &:hover {
         background-color: $modal-selector-background;
     }
+}
+
+
+.promptsModal {
+    width: 500px;
+    margin: auto;
 }
