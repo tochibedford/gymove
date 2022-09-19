@@ -1,11 +1,11 @@
 import styles from '@styles/test.module.scss';
-import SearchBar from "@components/searchbar/SearchBar";
-import Button from "../../components/buttons/button";
-import Options from '@components/modals/Options'
-import Avatar from '@components/avatar/Avatar'
-import DateSummary from "@components/datesummary/DateSummary";
-import MiniDateSummary from "@components/datesummary/MiniDateSummary";
-import Notifications from "@components/notifications/Notifications";
+import SearchBar from "@components/atoms/searchbar/SearchBar";
+import Button from "../../components/atoms/buttons/button";
+import Options from '@components/atoms/modals/Options'
+import Avatar from '@components/atoms/avatar/Avatar'
+import DateSummary from "@components/atoms/datesummary/DateSummary";
+import MiniDateSummary from "@components/atoms/datesummary/MiniDateSummary";
+import Notifications from "@components/atoms/notifications/Notifications";
 
 // use this file to test components
 const Test = () => {
@@ -74,7 +74,7 @@ const Test = () => {
                     <h2 className={styles.groupName}>
                         Notifications - <i>Tochi</i>
                     </h2>
-                    <Notifications notifications={["1"]} messages={["hey"]} gifts={["lollipop"]}/>
+                    <Notifications notifications={["1"]} messages={["hey"]} gifts={["lollipop"]} />
                 </div>
             </div>
         </div>
