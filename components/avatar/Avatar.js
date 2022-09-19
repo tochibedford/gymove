@@ -15,9 +15,6 @@ const Avatar = ({ name, status, image }) => {
                 <h1>{name}</h1>
                 <p>{status}</p>
             </div>
-            <div>
-                <Image src={dropdown} width={30} height={30} className={styles.avatarImage}></Image>
-            </div>
         </div>
     )
 }
