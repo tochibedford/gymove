@@ -7,6 +7,8 @@ import DateSummary from "@components/atoms/datesummary/DateSummary";
 import MiniDateSummary from "@components/atoms/datesummary/MiniDateSummary";
 import Notifications from "@components/atoms/notifications/Notifications";
 
+import UserProfile from '@components/molecules/userprofile/UserProfile';
+
 // use this file to test components
 const Test = () => {
     const user = {
@@ -75,6 +77,13 @@ const Test = () => {
                         Notifications - <i>Tochi</i>
                     </h2>
                     <Notifications notifications={["1"]} messages={["hey"]} gifts={["lollipop"]} />
+                </div>
+
+                <div className={styles.componentGroup}>
+                    <h2 className={styles.groupName}>
+                        User Profile - <i>Martins</i>
+                    </h2>
+                    <UserProfile name={user.name} status={user.status} image={user.image}></UserProfile>
                 </div>
             </div>
         </div>

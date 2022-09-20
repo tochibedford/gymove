@@ -1,0 +1,55 @@
+@import "theme.scss";
+
+.userProfileContainer {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.defaultDropdown {
+    transform: rotate(0deg);
+    margin-left: 30px;
+}
+
+.onclickDropdown {
+    margin-left: 30px;
+    transform: rotate(180deg);
+}
+
+@keyframes showOptions {
+    0% {
+        transform: translateY(30px);
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes removeOptions {
+    0% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+
+}
+
+.showUserOptions {
+    position: absolute;
+    right: -50px;
+    top: 70px;
+    animation: showOptions 0.7s ease-in-out forwards;
+}
+
+.removeUserOptions {
+    position: absolute;
+    right: -50px;
+    top: 70px;
+    animation: removeOptions 0.7s ease-in-out forwards;
+}
