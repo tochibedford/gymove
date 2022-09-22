@@ -41,7 +41,7 @@ $sidebar-side-padding: 4rem;
             left: $left-position;
             background-color: #E5E7F3;
             z-index: -1;
-            
+            transition: top 0.3s;          
         }
 
         .menuItem {
