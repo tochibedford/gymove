@@ -1,11 +1,12 @@
 import styles from '@styles/test.module.scss';
 import SearchBar from "@components/atoms/searchbar/SearchBar";
-import Button from "../../components/atoms/buttons/button";
+import Button from "../../components/atoms/buttons/Button";
 import Options from '@components/atoms/modals/Options'
 import Avatar from '@components/atoms/avatar/Avatar'
 import DateSummary from "@components/atoms/datesummary/DateSummary";
 import MiniDateSummary from "@components/atoms/datesummary/MiniDateSummary";
 import Notifications from "@components/atoms/notifications/Notifications";
+import SideBar from '@components/molecules/sidebar/SideBar';
 
 // use this file to test components
 const Test = () => {
@@ -75,6 +76,22 @@ const Test = () => {
                         Notifications - <i>Tochi</i>
                     </h2>
                     <Notifications notifications={["1"]} messages={["hey"]} gifts={["lollipop"]} />
+                </div>
+
+                <div className={styles.componentGroup}>
+                    <h2 className={styles.groupName}>
+                        SideBar - <i>Tochi</i>
+                    </h2>
+                    <div style={{
+                        height: "100vh",
+                        width: "100%",
+                        outline: "2px dashed #1DA7C5",
+                        position: "relative"
+                    }}> 
+                        {/* : ) */}
+                        <SideBar />
+                        <button>Click this to toggle the sidebar</button>
+                    </div>
                 </div>
             </div>
         </div>
