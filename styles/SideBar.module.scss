@@ -45,6 +45,7 @@ $sidebar-side-padding: 4rem;
         }
 
         .menuItem {
+            position: relative;
             display: flex;
             justify-content: flex-start;
             align-items: center;
@@ -52,6 +53,7 @@ $sidebar-side-padding: 4rem;
             font-weight: 800;
             gap: 3rem;
             height: $menu-item-height;
+            width: 100%;
             color: #9A9A9A;
             cursor: pointer;
 
@@ -62,6 +64,20 @@ $sidebar-side-padding: 4rem;
                 align-items: center;
                 width: 4rem;
             }
+        }
+
+        .activeMenuItem {
+            color: $primary-color;
+        }
+
+        .activeMenuItem::after {
+            content: '';
+            position: absolute;
+            right: -$sidebar-side-padding;
+            height: 100%;
+            width: 3px;
+            border-radius: 4px;
+            background-color: $primary-color;
         }
     }
 
@@ -81,4 +97,8 @@ $sidebar-side-padding: 4rem;
         }
         
     }
+}
+
+:export {
+    menuItemHeight: $menu-item-height
 }
