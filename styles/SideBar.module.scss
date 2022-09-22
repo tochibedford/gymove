@@ -64,6 +64,13 @@ $sidebar-side-padding: 4rem;
                 align-items: center;
                 width: 4rem;
             }
+
+            &::after {
+                content: '';
+                width: 0px;
+                background-color: transparent;
+                transition: width 0.3s, background-color 0.5s;
+            }
         }
 
         .activeMenuItem {
@@ -75,7 +82,7 @@ $sidebar-side-padding: 4rem;
             position: absolute;
             right: -$sidebar-side-padding;
             height: 100%;
-            width: 3px;
+            width: 5px;
             border-radius: 4px;
             background-color: $primary-color;
         }

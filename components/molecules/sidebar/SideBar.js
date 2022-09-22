@@ -44,7 +44,7 @@ const SideBar = () => {
 
         const handleMouseOver = (e)=>{
             const currentTargetRect = e.currentTarget.getBoundingClientRect()
-            const offsetYFromMenu = e.pageY - currentTargetRect.top
+            const offsetYFromMenu = e.y - currentTargetRect.top
             const menuItemHeight = menuSelector.current.getBoundingClientRect().height
             menuSelector.current.style.top = `${menuItemHeight*Math.floor(offsetYFromMenu/menuItemHeight)}px`
         }
