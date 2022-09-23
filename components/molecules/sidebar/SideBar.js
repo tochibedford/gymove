@@ -12,7 +12,7 @@ import DietMoveMenuIcon from '@icons/DietMoveMenuIcon.svg'
 import PersonalBrandIcon from '@icons/PersonalBrandIcon.svg'
 
 
-const SideBar = () => {
+const SideBar = ({isOpen}) => {
     const [activeMenuItem, setActiveMenuItem] = useState(3) //maybe save this to local storage to improve resumability?
     const menuElement = useRef(null)
     const menuSelector = useRef(null)
@@ -61,7 +61,7 @@ const SideBar = () => {
     }, [activeMenuItem])
 
     return ( 
-        <div className={styles.container}>
+        <div className={`${styles.container} ${isOpen?"":styles.containerIsClosed}`}>
             <div className={styles.title}>Main Menu</div>
             <ul className={styles.menu} ref={menuElement}>
                 <div className={styles.menuSelector} ref={menuSelector}></div>

@@ -7,9 +7,13 @@ import DateSummary from "@components/atoms/datesummary/DateSummary";
 import MiniDateSummary from "@components/atoms/datesummary/MiniDateSummary";
 import Notifications from "@components/atoms/notifications/Notifications";
 import SideBar from '@components/molecules/sidebar/SideBar';
+import { useState } from 'react';
 
 // use this file to test components
 const Test = () => {
+    // states
+    const [sideBarIsOpen, setsideBarIsOpen] = useState(true);
+
     const user = {
         name: "Peter Parkur",
         status: "Super Admin",
@@ -17,6 +21,14 @@ const Test = () => {
     }
 
     const a = [{ name: "Edit" }, { name: "Delete" }, { name: "Force Finish" }];
+
+
+
+    // event handlers
+    const handleSideBarToggle = ()=>{
+        setsideBarIsOpen(prev=>!prev)
+    }
+
     return (
         /* Start Code Here */
         <div className={styles.bodyContainer}>
@@ -83,14 +95,21 @@ const Test = () => {
                         SideBar - <i>Tochi</i>
                     </h2>
                     <div style={{
-                        height: "100vh",
                         width: "100%",
-                        outline: "2px dashed #1DA7C5",
                         position: "relative"
                     }}> 
                         {/* : ) */}
-                        <SideBar />
-                        <button>Click this to toggle the sidebar</button>
+                        <SideBar isOpen={sideBarIsOpen}/>
+                        <button style={{
+                            borderRadius: "30px",
+                            width: "20rem",
+                            height: "5rem",
+                            outline: "1px solid $category-cycling-color",
+                            boxShadow: `5px 5px 1px 0px #1DA7C5,
+                                        10px 10px 3px black,
+                                        15px 15px 2px #FF9331`,
+                            cursor: "pointer"
+                        }} onClick={handleSideBarToggle}>Click this to toggle the sidebar</button>
                     </div>
                 </div>
             </div>
