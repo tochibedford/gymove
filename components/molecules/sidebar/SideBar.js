@@ -30,12 +30,7 @@ const SideBar = () => {
             activeMenuElement.classList.remove(styles.activeMenuItem)
             
             setActiveMenuItem(()=>{
-                let newValue;
-                if(e.target.tagName === 'DIV'){
-                    newValue = parseInt(e.target.parentNode.getAttribute("item-number"))
-                }else{
-                    newValue = parseInt(e.target.getAttribute("item-number"))
-                }
+                let newValue = parseInt(e.target.getAttribute("item-number"))
                 activeMenuElement = menuEl.querySelector(`[item-number='${newValue}']`)
                 activeMenuElement.classList.add(styles.activeMenuItem)
                 return newValue
