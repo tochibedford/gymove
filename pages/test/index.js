@@ -8,6 +8,7 @@ import MiniDateSummary from "@components/atoms/datesummary/MiniDateSummary";
 import Notifications from "@components/atoms/notifications/Notifications";
 import SideBar from '@components/molecules/sidebar/SideBar';
 import { useState } from 'react';
+import Calendar from '@components/molecules/sidebar/Calendar';
 
 // use this file to test components
 const Test = () => {
@@ -111,6 +112,13 @@ const Test = () => {
                             cursor: "pointer"
                         }} onClick={handleSideBarToggle}>Click this to toggle the sidebar</button>
                     </div>
+                </div>
+
+                <div className={styles.componentGroup}>
+                    <h2 className={styles.groupName}>
+                        Calendar - <i>Tochi</i>
+                    </h2>
+                    <Calendar />
                 </div>
             </div>
         </div>
