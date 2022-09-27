@@ -21,7 +21,7 @@
             align-items: center;
             width: 100%;
             margin: 3em 0px;
-            padding: 4em;
+            padding: clamp(0.5em, 3vw,4em);
             outline: 1px solid $category-cycling-color;
             box-shadow: 5px 5px 1px 0px $category-cycling-color,
                         10px 10px 3px black,
